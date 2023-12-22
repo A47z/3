@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+      .carousel{
+        width: 100%;
+        height: 290px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .carousel img{
+        height: 290px;
+      }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #494A5F;
+            font-weight: 500;
+            font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+        }
+
+        #container {
+            margin: 0 auto;
+        }
+        div.search {padding: 30px;}
+
+        .search form {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .search input {
+            width: 100%;
+            height: 42px;
+            padding-left: 50px;
+            border: none;
+            outline: none;
+        }
+
+        .search button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+            border: none;
+            outline: none;
+        }
+        
+        .bar {background: #A3D0C3;}
+        .bar input {
+            border: 2px solid #7BA7AB;
+            border-radius: 5px;
+            background: #F9F0DA;
+            color: #9E9C9C;
+        }
+        .searcher {
+            top: 0;
+            left: 0;
+            background: #7BA7AB;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .searcher:before {
+            content: "\f002";
+            font-family: FontAwesome;
+            font-size: 16px;
+            color: #F9F0DA;
+        }
+        .weather {
+            top: 0;
+            right: 0;
+            background: #7BA7AB;
+            display: inline-block;
+            margin-left: 300px;
+            border-radius: 5px;
+        }
+        .recommendation{
+          text-align: center;
+          background-color: #fff;
+          height: 70px;
+          line-height: 70px;
+        }
+        .card{
+          margin-top: 20px;
+        }
+        .article img{
+          height: 130px;
+          float: right;
+        }
+        .article{
+          background-color: #fff;
+        }
+
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div id="container">
+      <div class="search bar">
+          <form>
+              <input type="text" placeholder="请输入">
+              <button type="submit" class="searcher"></button>
+              <button type="submit" class="weather">天气</button>
+          </form>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/assets/1408.jpg_wh860.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/R.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/OIP.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="recommendation">
+        <a class="btn btn-primary" href="" target="_blank" role="button">品牌推荐</a>
+        <a class="btn btn-primary" href="" target="_blank" role="button">附近推荐</a>
+        <a class="btn btn-primary" href="" target="_blank" role="button">独家活动</a>
+        <a class="btn btn-primary" href="" target="_blank" role="button">电商推荐</a>
+      </div>
+      <div class="article">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <p class="card-text">
+              <img src="./src/1408.jpg_wh860.jpg" alt="">
+              <h5 class="card-title">title</h5>
+              text</p>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <p class="card-text">
+              <img src="./src/1408.jpg_wh860.jpg" alt="">
+              <h5 class="card-title">title</h5>
+              text</p>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <p class="card-text">
+              <img src="./src/1408.jpg_wh860.jpg" alt="">
+              <h5 class="card-title">title</h5>
+              text</p>
+          </div>
+        </div>
+    </div>
+      
+
+    </div>
+  </body>
+</html>
